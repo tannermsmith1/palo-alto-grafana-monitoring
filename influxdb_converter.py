@@ -809,8 +809,8 @@ class EnvironmentalConverter(DataConverter):
             lines.extend(thermal_lines)
         
         # 2. Fan Sensors
-        if 'fan' in env_data:
-            fan_lines = self._convert_fan(hostname, env_data['fan'])
+        if 'fans' in env_data:
+            fan_lines = self._convert_fan(hostname, env_data['fans'])
             lines.extend(fan_lines)
         
         # 3. Power/Voltage Sensors
